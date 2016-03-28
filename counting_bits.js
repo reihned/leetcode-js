@@ -15,7 +15,7 @@ var countBits = function(num) {
 
 // var to_binary = function(j){
 //     result = [];
-//     for(var n = j; n > 0; n/=2){
+//     for(var n = j; ~~n > 0; n/=2){
 //         result.push(~~n%2);
 //     }
 //     return result;
@@ -23,7 +23,7 @@ var countBits = function(num) {
 
 var binary_count = function(k){
   result = 0;
-  for(var n = k; n > 0; n/=2){
+  for(var n = k; ~~n > 0; n/=2){
     result += ~~n%2;
   }
   return result;
